@@ -9,10 +9,11 @@ for _ in val:
     data.append(int(_))
 l = len(data)
 
+stack = []
 def swap(a,b,cnt):
     if cnt == K+1:
        return
-
+    stack.append((a,b))
     for i in range(l):
         for j in range(i + 1, l):
             temp = data[:]
@@ -21,3 +22,4 @@ def swap(a,b,cnt):
 
 
 swap(0,0,0)
+print(stack)
