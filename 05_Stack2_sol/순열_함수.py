@@ -11,3 +11,4 @@ for p in itertools.combinations(range(N), R):
     for i in range(R):
         print(p[i], end = " ")
     print()
+

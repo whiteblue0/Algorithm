@@ -24,7 +24,7 @@ for tc in range(1,T+1):
 
     # for _ in range(N):
     #     print(data[_][0],data[_][1])
-
+    # print(data)
     cnt = 0
     while data:
 
@@ -36,7 +36,6 @@ for tc in range(1,T+1):
             if not ispass(y,x):
                 temp.append(i)
         # print(data)
-
         for i in range(len(temp)-1,-1,-1):
             del data[i]
 
@@ -49,22 +48,22 @@ for tc in range(1,T+1):
             else:
                 check = []
                 check.append(i)
-                for j in range(len(data)):
-                    if temp:
-                        for w in temp:
-                            if data[w][1] == data[j][1] and data[w][0] == data[j][0]:
-                                temp.append(j)
-                                break
-                    if i != j and y == data[j][1] and x == data[j][0]:
-                        # print('data[j]:',data[j][1],data[j][0])
-                        check.append(j)
+                for j in range(i+1,len(data)):
+                    if i != j:
+                        if temp:
+                            for w in temp:
+                                if data[w][1] == data[j][1] and data[w][0] == data[j][0]:
+                                    temp.append(j)
+                                    break
+                        elif y == data[j][1] and x == data[j][0]:
+                            # print('data[j]:',data[j][1],data[j][0])
+                            check.append(j)
                 if len(check) == 1:
                     check = []
                 else:
                     for u in check:
                         temp.append(u)
         temp = set(temp)
-
         # print('temp:',temp)
         for i in temp:
             cnt += data[i][3]
