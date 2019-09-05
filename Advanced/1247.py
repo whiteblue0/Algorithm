@@ -23,7 +23,7 @@ def perm(n, k):
             k, i = i, k
 
 import sys
-sys.stdin = open('(1247)최적경로_input.txt')
+sys.stdin = open('1247.txt')
 
 T = int(input())
 
