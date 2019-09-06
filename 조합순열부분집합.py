@@ -13,7 +13,7 @@ N = 5
 K = 3
 data = [1, 2, 3, 4, 5]
 result = [0] * K
-combi1(0, 0)
+# combi1(0, 0)
 
 
 
@@ -40,7 +40,7 @@ data = [1,2,3,4,5]
 visited = [0]*N
 result = [0]*K
 
-permu1(0)
+# permu1(0)
 
 
 
@@ -90,10 +90,10 @@ def subset(c,idx):
         return
 
     for i in range(idx,N):
-        result[c] = i
+        result[c] = data[i]
         subset(c+1,i+1)
 
-N = 3
-data = [1,2,3]
+N = 4
+data = [2,3,4,5]
 result = [0]*N
-# subset(0,0)
+subset(0,0)
