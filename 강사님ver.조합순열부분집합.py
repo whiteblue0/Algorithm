@@ -18,9 +18,9 @@ comb(4,3,3)
 
 # 중복조합
 
-def H(n,r,q):
-    if r == 0:
-        myprint(q)
-    elif n ==0:
-        return
-    else:
+# def H(n,r,q):
+#     if r == 0:
+#         myprint(q)
+#     elif n ==0:
+#         return
+#     else:

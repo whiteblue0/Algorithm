@@ -13,7 +13,7 @@ N = 5
 K = 3
 data = [1, 2, 3, 4, 5]
 result = [0] * K
-combi1(0, 0)
+# combi1(0, 0)
 
 
 
