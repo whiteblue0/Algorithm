@@ -42,7 +42,7 @@ for tc in range(1,T+1):
     while len(stack):
         fixlst.append(stack.pop())
 
-    # print(fixlst,stack)
+    # print(''.join(list(map(str,fixlst))))
 
     result = 0
     for i in range(len(fixlst)):
