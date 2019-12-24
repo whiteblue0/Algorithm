@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('(5249)최소신장트리_input.txt', 'r')
+sys.stdin = open('최소신장트리.txt', 'r')
 T = int(input())
 
 def findSet(x):

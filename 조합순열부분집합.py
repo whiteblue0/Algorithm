@@ -20,9 +20,9 @@ result = [0] * K
 
 # 순열
 def permu1(c):
-    print(result[:c])
+    # print(result[:c])
     if c == K:
-        # print(result)
+        print(result)
         return
 
     for i in range(N):
@@ -41,7 +41,7 @@ data = [1,2,3,4,5,6]
 visited = [0]*N
 result = [0]*K
 
-# permu1(0)
+permu1(0)
 
 
 
@@ -100,4 +100,4 @@ def subset(c,idx):
 N = 4
 data = [1,2,3,4]
 result = [0]*N
-subset(0,0)
+# subset(0,0)
